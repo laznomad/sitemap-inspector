@@ -12,19 +12,6 @@
 	</head>
 	<body>
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36558746-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 	
 	
 	<div class="sitemap">
@@ -82,9 +69,9 @@
 
       
 
-	mysql_connect("localhost","sitepxaa_usr","83B13nile140") or die(mysql_error()); 
+	mysql_connect("localhost","","") or die(mysql_error()); 
 	
-  	mysql_select_db("sitepxaa_xml") or die(mysql_error()); 
+  	mysql_select_db("") or die(mysql_error()); 
 
   	$query = "INSERT INTO sitepxaa_dbxml (url, time, url_checked, errors) VALUES ('$url', '$time', '$url_checked', '$errors')";
 	
